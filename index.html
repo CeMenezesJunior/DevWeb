@@ -12,7 +12,52 @@
 
 <body>
 
-   <!-- Aqui entra o conteúdo dessa página. -->
+   <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+      <div class="container">
+         <a class="navbar-brand" href="#">Rock Street</a>
+         <button class="navbar-toogler d-md-none" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Botão de navegação">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mr-auto">
+               <a class="nav-link nav-item" href="#albuns">Albuns</a>
+               <a class="nav-link nav-item" href="#bandas">Bandas</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <div id="carousel-id" class="carousel slide d-none d-md-block mb-4" style="margin-top: 69px;" data-ride="carousel" data-interval = "5000">
+      <ol class="carousel-indicators">
+         <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-id" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img src="https://wallpapercave.com/wp/wp4560370.jpg" class="d-block w-100" style="height: 450px;">
+         </div>
+         <div class="carousel-item">
+            <img src="https://theweeklyspoon.com/wp-content/uploads/2018/05/Queen.jpg" class="d-block w-100" style="height: 450px;">
+         </div>
+      </div>
+      <a href="#carousel-id" class="carousel-control-prev" role="button" data-slide="prev">
+         <span aria-hidden="true" class="carousel-control-prev-icon">
+            <span class="sr-only">Anterior</span>
+         </span>
+      </a>
+      <a href="#carousel-id" class="carousel-control-next" role="button" data-slide="next">
+         <span aria-hidden="true" class="carousel-control-next-icon">
+            <span class="sr-only">Próxima</span>
+         </span>
+      </a>
+   </div>
+   <div class="container">
+      <div class="jumbotron d-block d-md-none text-center mb-4" style="margin-top: 89px;">
+         <h5>Seu site sobre a história do Rock</h5>
+      </div>
+   </div>
+
 
    <script src="assets/js/jquery-3.3.1.js"></script>
    <script src="assets/js/popper.js"></script>
