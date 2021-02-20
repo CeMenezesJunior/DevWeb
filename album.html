@@ -21,12 +21,78 @@
          </button>
          <div class="collapse navbar-collapse" id="menu">
             <div class="navbar-nav mr-auto">
-               <a class="nav-link nav-item" href="#albuns">Albuns</a>
-               <a class="nav-link nav-item" href="#bandas">Bandas e Artistas</a>
+               <a class="nav-link nav-item" href="#descricao">Descrição</a>
+               <a class="nav-link nav-item" href="#musicas">Músicas</a>
             </div>
          </div>
       </div>
    </nav>
+
+   <div class="abimage mb-4" style="margin-top: 69px;"></div>
+
+   <h4 id="descricao" class="mb-3">Descricao</h4>
+   <div class="accordion mb-4" id="id-accordion-descricao">
+       <div class="card">
+           <div class="card-header" id="id-header-historia">
+               <h5 class="mb-0">
+                   <a href="#id-historia" data-toggle="collapse" aria-expanded="true" aria-controls="id-historia">
+                       História
+                   </a>
+               </h5>
+           </div>
+           <div id="id-historia" class="collapse show" data-parent="#id-accordion-descricao" aria-labelledby="id-header-historia">
+               <div class="card-body">
+                   <p> Texto será inserido aqui</p>
+                   <div class="alert alert-info alert-dismissible fade show">
+                       <h4>Complementando</h4>
+                       <button type="button" data-dismiss="alert" aria-label="Close" class="close">
+                           <span aria-hidden="true">&times;</span>
+                       </button>
+                       <p class="mb-2">Complemento a história</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="card">
+        <div class="card-header" id="id-header-gravacoes">
+            <h5 class="mb-0">
+                <a href="#id-gravacoes" data-toggle="collapse" aria-expanded="true" aria-controls="id-gravacoes">
+                    Gravações
+                </a>
+            </h5>
+        </div>
+        <div id="id-gravacoes" class="collapse" data-parent="#id-accordion-descricao" aria-labelledby="id-header-gravacoes">
+            <div class="card-body">
+                <p> Texto será inserido aqui</p>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="id-header-fotos">
+                <h5 class="mb-0">
+                    <a href="#id-fotos" data-toggle="collapse" aria-expanded="true" aria-controls="id-fotos">
+                        Fotos
+                    </a>
+                </h5>
+            </div>
+            <div id="id-fotos" class="collapse" data-parent="#id-accordion-descricao" aria-labelledby="id-header-fotos">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="media">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81sBKBIcwvL._AC_SY355_.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+    </div>
+
+   
 
    <script src="assets/js/jquery-3.3.1.js"></script>
    <script src="assets/js/popper.js"></script>

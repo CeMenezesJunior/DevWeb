@@ -12,3 +12,10 @@
 .footer h5{
     text-align: center;
 }
+
+.abimage{
+    background-image: url("https://wallpapercave.com/wp/wp4560370.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
