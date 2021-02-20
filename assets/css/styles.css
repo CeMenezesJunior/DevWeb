@@ -4,3 +4,11 @@
 .list-group small{
     color: darkblue;
 }
+.footer{
+    background-color: lightgray;
+    padding: 30px 0;
+}
+
+.footer h5{
+    text-align: center;
+}
