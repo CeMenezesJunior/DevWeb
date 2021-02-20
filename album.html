@@ -2,101 +2,220 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-   <link href="assets/css/bootstrap.css" rel="stylesheet">
-   <link href="assets/css/all.css" rel="stylesheet">
-   <link href="assets/css/styles.css" rel="stylesheet">
-   <title>Álbum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>Álbum</title>
 </head>
 
 <body>
 
-   <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
-      <div class="container">
-         <a class="navbar-brand" href="#">Rock Street</a>
-         <button class="navbar-toogler d-md-none" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
-            aria-expanded="false" aria-label="Botão de navegação">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="menu">
-            <div class="navbar-nav mr-auto">
-               <a class="nav-link nav-item" href="#descricao">Descrição</a>
-               <a class="nav-link nav-item" href="#musicas">Músicas</a>
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rock Street</a>
+            <button class="navbar-toogler d-md-none" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Botão de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-link nav-item" href="#descricao">Descrição</a>
+                    <a class="nav-link nav-item" href="#musicas">Músicas</a>
+                </div>
             </div>
-         </div>
-      </div>
-   </nav>
-
-   <div class="abimage mb-4" style="margin-top: 69px;"></div>
-
-   <h4 id="descricao" class="mb-3">Descricao</h4>
-   <div class="accordion mb-4" id="id-accordion-descricao">
-       <div class="card">
-           <div class="card-header" id="id-header-historia">
-               <h5 class="mb-0">
-                   <a href="#id-historia" data-toggle="collapse" aria-expanded="true" aria-controls="id-historia">
-                       História
-                   </a>
-               </h5>
-           </div>
-           <div id="id-historia" class="collapse show" data-parent="#id-accordion-descricao" aria-labelledby="id-header-historia">
-               <div class="card-body">
-                   <p> Texto será inserido aqui</p>
-                   <div class="alert alert-info alert-dismissible fade show">
-                       <h4>Complementando</h4>
-                       <button type="button" data-dismiss="alert" aria-label="Close" class="close">
-                           <span aria-hidden="true">&times;</span>
-                       </button>
-                       <p class="mb-2">Complemento a história</p>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-       <div class="card">
-        <div class="card-header" id="id-header-gravacoes">
-            <h5 class="mb-0">
-                <a href="#id-gravacoes" data-toggle="collapse" aria-expanded="true" aria-controls="id-gravacoes">
-                    Gravações
-                </a>
-            </h5>
         </div>
-        <div id="id-gravacoes" class="collapse" data-parent="#id-accordion-descricao" aria-labelledby="id-header-gravacoes">
-            <div class="card-body">
-                <p> Texto será inserido aqui</p>
-                
+    </nav>
+
+    <div class="abimage mb-4" style="margin-top: 69px;"></div>
+
+    <h4 id="descricao" class="mb-3">Descricao</h4>
+    <div class="accordion mb-4" id="id-accordion-descricao">
+        <div class="card">
+            <div class="card-header" id="id-header-historia">
+                <h5 class="mb-0">
+                    <a href="#id-historia" data-toggle="collapse" aria-expanded="true" aria-controls="id-historia">
+                        História
+                    </a>
+                </h5>
+            </div>
+            <div id="id-historia" class="collapse show" data-parent="#id-accordion-descricao"
+                aria-labelledby="id-header-historia">
+                <div class="card-body">
+                    <p> Texto será inserido aqui</p>
+                    <div class="alert alert-info alert-dismissible fade show">
+                        <h4>Complementando</h4>
+                        <button type="button" data-dismiss="alert" aria-label="Close" class="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p class="mb-2">Complemento a história</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-header" id="id-header-fotos">
+            <div class="card-header" id="id-header-gravacoes">
                 <h5 class="mb-0">
-                    <a href="#id-fotos" data-toggle="collapse" aria-expanded="true" aria-controls="id-fotos">
-                        Fotos
+                    <a href="#id-gravacoes" data-toggle="collapse" aria-expanded="true" aria-controls="id-gravacoes">
+                        Gravações
                     </a>
                 </h5>
             </div>
-            <div id="id-fotos" class="collapse" data-parent="#id-accordion-descricao" aria-labelledby="id-header-fotos">
+            <div id="id-gravacoes" class="collapse" data-parent="#id-accordion-descricao"
+                aria-labelledby="id-header-gravacoes">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="media">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/81sBKBIcwvL._AC_SY355_.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <p> Texto será inserido aqui</p>
+
                 </div>
             </div>
 
-    </div>
+            <div class="card">
+                <div class="card-header" id="id-header-fotos">
+                    <h5 class="mb-0">
+                        <a href="#id-fotos" data-toggle="collapse" aria-expanded="true" aria-controls="id-fotos">
+                            Fotos
+                        </a>
+                    </h5>
+                </div>
+                <div id="id-fotos" class="collapse" data-parent="#id-accordion-descricao"
+                    aria-labelledby="id-header-fotos">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="media">
+                                    <img
+                                        src="https://images-na.ssl-images-amazon.com/images/I/81sBKBIcwvL._AC_SY355_.jpg">
+                                </div>
+                            </div>
+                        </div>
 
-   
+                    </div>
+                </div>
 
-   <script src="assets/js/jquery-3.3.1.js"></script>
-   <script src="assets/js/popper.js"></script>
-   <script src="assets/js/bootstrap.js"></script>
-   <script src="assets/js/script.js"></script>
+            </div>
+
+            <h4 id="musicas" class="mt-3">Músicas</h4>
+            <h6>Onde não ouver autor será os autores são Lennon e McCartney</h6>
+            <h5 class="mb-2" style="text-decoration: underline;">Lado A</h5>
+            <div class="list-group mb-2">
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Come Together</h5>
+                        <small>4:20</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Something (George Harrison)</h5>
+                        <small>3:03</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Maxwell's Silver Hammer</h5>
+                        <small>3:27</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Oh! Darling</h5>
+                        <small>3:26</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Octopus's Garden (Ringo Starr)</h5>
+                        <small>2:51</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">I Want You (She's So Heavy)</h5>
+                        <small>7:47</small>
+                    </div>
+                </a>
+            </div>
+
+            <h5 class="mb-2" style="text-decoration: underline;">Lado B</h5>
+            <div class="list-group mb-2">
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Here Comes the Sun (George Harrison)</h5>
+                        <small>3:05</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Because</h5>
+                        <small>2:45</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">You Never Give Me Your Money</h5>
+                        <small>4:02</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Sun King</h5>
+                        <small>2:26</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Mean Mr. Mustard</h5>
+                        <small>1:06</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Polythene Pam</h5>
+                        <small>1:12</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">She Came in Through the Bathromm Window</h5>
+                        <small>1:57</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Golden Slumbers</h5>
+                        <small>1:31</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Carry That Weight</h5>
+                        <small>1:36</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">The End</h5>
+                        <small>2:05</small>
+                    </div>
+                </a>
+                <a href="#musicas" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Her Majesty</h5>
+                        <small>0:23</small>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="footer mt-4">
+                <h5><i class="fas fa-user"></i> Carlos Eduardo Menezes Junior</h5>
+              </div>
+
+            <script src="assets/js/jquery-3.3.1.js"></script>
+            <script src="assets/js/popper.js"></script>
+            <script src="assets/js/bootstrap.js"></script>
+            <script src="assets/js/script.js"></script>
 </body>
+
 </html>
