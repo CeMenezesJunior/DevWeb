@@ -23,6 +23,7 @@
             <div class="navbar-nav mr-auto">
                <a class="nav-link nav-item" href="#albuns">Albuns</a>
                <a class="nav-link nav-item" href="#bandas">Bandas e Artistas</a>
+               <a class="nav-link nav-item" href="#pesquisamodel" data-toggle="modal">Pesquisa</a>
             </div>
          </div>
       </div>
@@ -52,6 +53,110 @@
          </span>
       </a>
    </div>
+
+   <div class="modal fade" id="pesquisamodel">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="modal-title">Pesquisa de Opinião</span>
+               <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                  <span aria-hidden="true">&times;</span> 
+               </button>
+            </div>
+            <div class="modal-body">
+               <form action="">
+                  <fieldset class="form-group">
+                     <legend class="font-weight-bold">Quem é voce?</legend>
+                     <div class="form-group row">
+                        <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                        <div class="col-lg-10">
+                           <input type="text" class="form-control is-invalid" placeholder="Nome" name="nome" id="nome">
+                           <div class="invalid-feedback">
+                              Esse campo é obrigatório
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Sexo</label>
+                        <div class="col-lg-10" style="padding-top: 7px;">
+                           <div class="form-check form-check-inline">
+                              <input type="radio" id="sexo-masc" name="sexo" value="M" class="form-check-input">
+                              <label for="sexo-masc" class="form-check-label">Masculino</label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input type="radio" id="sexo-fem" name="sexo" value="F" class="form-check-input">
+                              <label for="sexo-fem" class="form-check-label">Feminino</label>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </fieldset>
+                  <fieldset class="form-group">
+                     <legend class="font-weight-bold">Responda a nossa pesquisa</legend>
+                     <div class="form-group row">
+                        <label for="albuns" class="col-form-label col-lg-2">Álbuns favoritos</label>
+                        <div class="col-lg-10">
+                           <select class="form-control" id="albuns" name="albuns" multiple>
+                              <option value="1">Abbey Road</option>
+                              <option value="2">Let it be</option>
+                              <option value="3">Sgt. Pepper's Lonely Hearts Club Band</option>
+                              <option value="4">A Night at the Opera</option>
+                              <option value="5">Dark Side of The Moon</option>
+                              <option value="6">East of the Sun West of the Moon</option>
+                              <option value="7">A Kind of Magic</option>
+                              <option value="8">Elvis</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Bandas ou Artistas Favoritos</label>
+                        <div class="col-lg-10">
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" name="beatles" id="beatles">
+                              <label class="form-check-label" for="beatles">
+                                 The Beatles
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" name="queen" id="queen">
+                              <label class="form-check-label" for="queen">
+                                 Queen
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" name="elvis" id="elvis">
+                              <label class="form-check-label" for="elvis">
+                                 Elvis Presley
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" name="aha" id="aha">
+                              <label class="form-check-label" for="aha">
+                                 a-ha
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" name="pinkfloyd" id="pinkfloyd">
+                              <label class="form-check-label" for="pinkfloyd">
+                                 Pink Floyd
+                              </label>
+                           </div>
+                        </div> 
+                     </div>
+                  </fieldset>
+                  <div class="form-group row">
+                     <div class="col-lg-10 offset-lg-2">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                           Enviar
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <div class="container">
       <div class="jumbotron d-block d-md-none text-center mb-4" style="margin-top: 89px;">
          <h5>Seu site sobre a história do Rock</h5>
