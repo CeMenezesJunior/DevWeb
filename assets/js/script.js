@@ -199,7 +199,202 @@ $(function() {
         
     })
 
+    let like_kind = $("#like-kind").data("like")
+    let dislike_kind = $("#dislike-kind").data("dislike")
+
+    let testeLikekind = true
+    let testeDislikekind = true
+
+    $("#like-kind").text(like_kind)
+    $("#dislike-kind").text(dislike_kind)
+
+    $("#like-b-kind").click(function(){
+        if(testeLikekind){
+            $("#thumb-up-kind").removeClass("far fa-thumbs-up").addClass("fas fa-thumbs-up")
+            $("#like-kind").text(like_kind+1)
+            $("#dislike-kind").text(dislike_kind)
+            testeLikekind = false
+            if(!testeDislikekind){
+                $("#thumb-down-kind").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+                testeDislikekind = true
+            }
+        }
+        else{
+            $("#thumb-up-kind").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+            $("#like-kind").text(like_kind)
+            $("#dislike-kind").text(dislike_kind)
+            testeLikekind = true
+        }
+        
+    })
+
+    $("#dislike-b-kind").click(function(){
+        if(testeDislikekind){
+            $("#thumb-down-kind").removeClass("far fa-thumbs-down").addClass("fas fa-thumbs-down")
+            $("#like-kind").text(like_kind)
+            $("#dislike-kind").text(dislike_kind+1)
+            testeDislikekind = false
+            if(!testeLikekind){
+                $("#thumb-up-kind").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+                testeLikekind = true 
+            }
+        }
+        else{
+            $("#thumb-down-kind").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+            $("#like-kind").text(like_kind)
+            $("#dislike-kind").text(dislike_kind)
+            testeDislikekind = true
+        }
+        
+    })
+
+    let like_dark = $("#like-dark").data("like")
+    let dislike_dark = $("#dislike-dark").data("dislike")
+
+    let testeLikedark = true
+    let testeDislikedark = true
+
+    $("#like-dark").text(like_dark)
+    $("#dislike-dark").text(dislike_dark)
+
+    $("#like-b-dark").click(function(){
+        if(testeLikedark){
+            $("#thumb-up-dark").removeClass("far fa-thumbs-up").addClass("fas fa-thumbs-up")
+            $("#like-dark").text(like_dark+1)
+            $("#dislike-dark").text(dislike_dark)
+            testeLikedark = false
+            if(!testeDislikedark){
+                $("#thumb-down-dark").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+                testeDislikedark = true
+            }
+        }
+        else{
+            $("#thumb-up-dark").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+            $("#like-dark").text(like_dark)
+            $("#dislike-dark").text(dislike_dark)
+            testeLikedark = true
+        }
+        
+    })
+
+    $("#dislike-b-dark").click(function(){
+        if(testeDislikedark){
+            $("#thumb-down-dark").removeClass("far fa-thumbs-down").addClass("fas fa-thumbs-down")
+            $("#like-dark").text(like_dark)
+            $("#dislike-dark").text(dislike_dark+1)
+            testeDislikedark = false
+            if(!testeLikedark){
+                $("#thumb-up-dark").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+                testeLikedark = true 
+            }
+        }
+        else{
+            $("#thumb-down-dark").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+            $("#like-dark").text(like_dark)
+            $("#dislike-dark").text(dislike_dark)
+            testeDislikedark = true
+        }
+        
+    })
+
     
+    let like_east = $("#like-east").data("like")
+    let dislike_east = $("#dislike-east").data("dislike")
+
+    let testeLikeeast = true
+    let testeDislikeeast = true
+
+    $("#like-east").text(like_east)
+    $("#dislike-east").text(dislike_east)
+
+    $("#like-b-east").click(function(){
+        if(testeLikeeast){
+            $("#thumb-up-east").removeClass("far fa-thumbs-up").addClass("fas fa-thumbs-up")
+            $("#like-east").text(like_east+1)
+            $("#dislike-east").text(dislike_east)
+            testeLikeeast = false
+            if(!testeDislikeeast){
+                $("#thumb-down-east").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+                testeDislikeeast = true
+            }
+        }
+        else{
+            $("#thumb-up-east").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+            $("#like-east").text(like_east)
+            $("#dislike-east").text(dislike_east)
+            testeLikeeast = true
+        }
+        
+    })
+
+    $("#dislike-b-east").click(function(){
+        if(testeDislikeeast){
+            $("#thumb-down-east").removeClass("far fa-thumbs-down").addClass("fas fa-thumbs-down")
+            $("#like-east").text(like_east)
+            $("#dislike-east").text(dislike_east+1)
+            testeDislikeeast = false
+            if(!testeLikeeast){
+                $("#thumb-up-east").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+                testeLikeeast = true 
+            }
+        }
+        else{
+            $("#thumb-down-east").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+            $("#like-east").text(like_east)
+            $("#dislike-east").text(dislike_east)
+            testeDislikeeast = true
+        }
+        
+    })
+
+    let like_elvis = $("#like-elvis").data("like")
+    let dislike_elvis = $("#dislike-elvis").data("dislike")
+
+    let testeLikeelvis = true
+    let testeDislikeelvis = true
+
+    $("#like-elvis").text(like_elvis)
+    $("#dislike-elvis").text(dislike_elvis)
+
+    $("#like-b-elvis").click(function(){
+        if(testeLikeelvis){
+            $("#thumb-up-elvis").removeClass("far fa-thumbs-up").addClass("fas fa-thumbs-up")
+            $("#like-elvis").text(like_elvis+1)
+            $("#dislike-elvis").text(dislike_elvis)
+            testeLikeelvis = false
+            if(!testeDislikeelvis){
+                $("#thumb-down-elvis").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+                testeDislikeelvis = true
+            }
+        }
+        else{
+            $("#thumb-up-elvis").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+            $("#like-elvis").text(like_elvis)
+            $("#dislike-elvis").text(dislike_elvis)
+            testeLikeelvis = true
+        }
+        
+    })
+
+    $("#dislike-b-elvis").click(function(){
+        if(testeDislikeelvis){
+            $("#thumb-down-elvis").removeClass("far fa-thumbs-down").addClass("fas fa-thumbs-down")
+            $("#like-elvis").text(like_elvis)
+            $("#dislike-elvis").text(dislike_elvis+1)
+            testeDislikeelvis = false
+            if(!testeLikeelvis){
+                $("#thumb-up-elvis").removeClass("fas fa-thumbs-up").addClass("far fa-thumbs-up")
+                testeLikeelvis = true 
+            }
+        }
+        else{
+            $("#thumb-down-elvis").removeClass("fas fa-thumbs-down").addClass("far fa-thumbs-down")
+            $("#like-elvis").text(like_elvis)
+            $("#dislike-elvis").text(dislike_elvis)
+            testeDislikeelvis = true
+        }
+        
+    })
 
 
     $("#botao-enviar").click(function(){
